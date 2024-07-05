@@ -3,3 +3,5 @@ backend/audio_files
 backend/services/api_key.py
 backend/controllers/__pycache__
 backend/services/__pycache__
+.git
+.gitignore
