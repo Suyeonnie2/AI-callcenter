@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.conversation-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #e6f2ff;
+    text-align: right;
+}
+
+.ai-message {
+    background-color: #f0f0f0;
+}
+
+.control-buttons, .voice-input-buttons, .speak-response-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-button, .voice-button, .speak-button {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+.control-button {
+    background-color: #28a745;
+}
+
+.voice-button {
+    background-color: #17a2b8;
+}
+
+.speak-button {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.control-button:hover, .voice-button:hover, .speak-button:hover {
+    opacity: 0.8;
+}
+
+.control-button:disabled, .voice-button:disabled, .speak-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.button-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.icon-button {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    background-color: #0056b3;
+}
+
+.icon-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}

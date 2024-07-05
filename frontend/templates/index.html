@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 콜센터</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI 콜센터</h1>
+        <div id="conversation" class="conversation-box"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" class="user-input" placeholder="메시지를 입력하세요..." disabled>
+            <button onclick="sendMessage()" id="sendButton" class="submit-button" disabled>전송</button>
+        </div>
+        <div class="button-area">
+            <div class="voice-input-buttons">
+                <button onclick="toggleVoiceInput()" id="voiceToggleButton" class="icon-button" disabled><i class="fas fa-microphone"></i></button>
+            </div>
+            <div class="speak-response-buttons">
+                <button onclick="toggleSpeakResponse()" id="speakToggleButton" class="icon-button" disabled><i class="fas fa-play"></i></button>
+            </div>
+        </div>
+        <div class="control-buttons">
+            <button onclick="connectAgent()" id="connectButton" class="control-button">상담원 연결</button>
+            <button onclick="disconnectAgent()" id="disconnectButton" class="control-button" disabled>연결 종료</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
